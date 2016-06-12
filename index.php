@@ -53,10 +53,10 @@ fclose($f);
     fclose($f);
 }
 */
-echo "$counterVal";
+//echo "$counterVal";
 $counterVal++;
 echo "<br>";
-echo "$counterVal";
+//echo "$counterVal";
 
     $f = fopen($counter_name, "w");
     fwrite($f, $counterVal);
@@ -66,7 +66,7 @@ echo "$counterVal";
     fwrite($f, $time);
     fclose($f);
 $last_visit_time = date('c', $last_visit_time);
-echo "You are visitor number $counterVal to this site, last visit took place $last_visit_time";
+echo "<p>You are visitor number $counterVal to this site, last visit took place $last_visit_time</p>";
 ?>
 
 
